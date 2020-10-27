@@ -1,2 +1,4 @@
 *.csv
+*.zip
 *-checkpoint.ipynb
+*DS_store
