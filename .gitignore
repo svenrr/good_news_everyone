@@ -1,4 +1,4 @@
-*.csv
+*_big.csv
 *.zip
 *-checkpoint.ipynb
 *DS_store
