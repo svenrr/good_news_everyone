@@ -4,21 +4,22 @@ from multiprocessing import Pool
 class Lemmatizer:
     
     def __init__(self):
-        self.nlp = spacy.load('en')
+        self.nlp = spacy.load('en_core_web_sm')
+        
+    def is_token_allowed(self, token):
+        if (not token or not token.string.strip() or
+            token.is_stop or token.is_punct):
+            return False
+        return True
         
     def lem_text(self, text):
-
-        # Remove signs
-        chars_to_remove = ':,!.\n-()/'
-        for i in chars_to_remove:
-            text = text.replace(i, '')
 
         # Lower text
         text = text.lower()
 
         # Lemmatize text, remove stopwords
         doc = self.nlp(text)
-        text = [token.lemma_ for token in doc if not token.is_stop]
+        text = [token.lemma_ for token in doc if self.is_token_allowed(token)]
 
         return ' '.join(text).replace('"', '').replace("'", '')
     
