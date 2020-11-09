@@ -1,0 +1,51 @@
+# Training settings
+batch_size: 32
+seed: 42
+epochs: 30
+loss: 'categorical' # categorical, binary
+metric: 'categorical_accuracy' # categorical_accuracy, binary_accuracy
+regularizer: 'l2' # l1, l2
+regularization: 0
+
+# Model
+model: 'model1' # model1, rnn1, nnlm_en_dim50
+
+preprocess:
+    model1: True
+    rnn1: True
+    nnlm_en_dim50: False
+
+dropout:
+    model1: 0.2
+    rnn1: 0.2
+    nnlm_en_dim50: 0.2
+
+# Feature settings
+embedding_dim:
+    model1: 20
+    rnn1: 16
+vocab_size:
+    model1: 10000
+    rnn1: 10000
+sequence_length:
+    model1: 450 # 250
+    rnn1: 450
+
+
+# Dataset settings
+load_from_file: False
+train_ds_dir: 'rnn/datasets/cat_sample/train' #'rnn/datasets/aclImdb/train'
+test_ds_dir: 'rnn/datasets/cat_sample/test' #'rnn/datasets/aclImdb/test'
+
+train_val_split: 0.3
+
+# Printouts
+print_samples: False
+print_model: False
+print_plots: False
+print_fit: 0 # 0=False, 1=True
+print_test: False
+
+# Save model
+model_checkpoints: True # Not implemented yet
+save_model: True

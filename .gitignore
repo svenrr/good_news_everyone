@@ -4,6 +4,9 @@ __pycache__/
 # Working folder fabi
 working_folder/
 
+# Don't load pretrained tf models
+Category_Analysis/tf_models/pretrained_models/*
+
 *_big.csv
 *.zip
 *-checkpoint.ipynb
