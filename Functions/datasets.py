@@ -32,4 +32,4 @@ def load_stratified_dataset(path, labels, samples_per_label, random_seed=42):
         l.append(tmp)
     df = pd.concat(l, axis=0, ignore_index=True)
     
-    return df.sample(frac=1).reset_index(drop=True)
+    return df.sample(frac=1, random_state=random_seed).reset_index(drop=True)

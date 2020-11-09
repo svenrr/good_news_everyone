@@ -8,7 +8,8 @@ class Lemmatizer:
         
     def is_token_allowed(self, token):
         if (not token or not token.string.strip() or
-            token.is_stop or token.is_punct):
+            token.is_stop or token.is_punct or
+            token.like_num or token.like_url):
             return False
         return True
         
