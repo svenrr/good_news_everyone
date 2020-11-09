@@ -1,3 +1,9 @@
+# Pycache
+__pycache__/
+
+# Working folder fabi
+working_folder/
+
 *_big.csv
 *.zip
 *-checkpoint.ipynb
