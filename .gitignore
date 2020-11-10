@@ -1,11 +1,16 @@
 # Pycache
 __pycache__/
+*.pyc
 
 # Working folder fabi
 working_folder/
 
 # Don't load pretrained tf models
 Category_Analysis/tf_models/pretrained_models/*
+
+# Datasets
+*dataset_categories_train.csv
+*dataset_categories_test.csv
 
 *_big.csv
 *.zip
