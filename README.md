@@ -15,7 +15,7 @@ The finished product could either be a website on which users could find only po
 
 [1. Overview](#overview)
 
-[2. Data acquistion](#data-acqusition-and-engineering)
+[2. Data acquistion and preprocessing](#data-acqusition-and-preprocessing)
 
 [3. Sentiment Analysis](#sentiment-analysis)
 
@@ -32,7 +32,7 @@ The finished product could either be a website on which users could find only po
 
 
 
-### Data acqusition and engineering
+### Data acqusition and preprocessing
 
 The main source of the data is webhose.io, a database for web content. From there we loaded ~400k articles. After extensive data cleaning we ended at ~70k articles. 
 These articles were already categorized (finance, politics etc.), but no label for the sentiment was given. We labeled part of the data by running 3 different dictionary based sentiment analysis. We chose three thresholds which made sure that an article was in fact positive or at least neutral. Neutral and bad articles were classified as one category.
