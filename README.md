@@ -15,15 +15,15 @@ The finished product could either be a website on which users could find only po
 
 [1. Overview](#overview)
 
-[2. Data acquistion](###data-acqusition-&-engineering)
+[2. Data acquistion](#data-acqusition-&-engineering)
 
-[3. Sentiment Analysis](###sentiment-analysis)
+[3. Sentiment Analysis](#sentiment-analysis)
 
-[4. Categorization](###categorization)
+[4. Categorization](#categorization)
 
-[5. Summarization](###summarization)
+[5. Summarization](#summarization)
 
-[6. Webapp](###webapp)
+[6. Webapp](#webapp)
 
 ---------------------
 
