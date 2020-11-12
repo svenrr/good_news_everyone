@@ -10,23 +10,32 @@ The finished product could either be a website on which users could find only po
 
 ## Table of Content
 
-1. [Overview](###overview)
+[1. Overview](###overview)
 
-2. [Data acquistion](###data-acqusition)
+[2. Data acquistion](###data-acqusition-&-engineering)
 
-3. [Sentiment Analysis](###sentiment-analysis)
+[3. Sentiment Analysis](###sentiment-analysis)
 
-4. [Categorization](###categorization)
+[4. Categorization](###categorization)
 
-5. [Summarization](###summarization)
+[5. Summarization](###summarization)
 
-6. [Webapp](###webapp)
+[6. Webapp](###webapp)
+
+
 
 ### Overview
 
 
 
-### Data acqusition
+
+### Data acqusition & engineering
+
+The main source of the data is webhose.io, a database for web content. From there we loaded ~400k articles. After extensive data cleaning we ended at ~70k articles. 
+These articles were already categorized (finance, politics etc.), but no label for the sentiment was given. We labeled part of the data by running 3 different dictionary based sentiment analysis. We chose three thresholds which made sure that an article was in fact positive or at least neutral. Neutral and bad articles were classified as one category.
+For more reliable data to add, we used positive news websites and scraped articles from there. We also used some subreddits as sources for good and bad news articles. In the end we assemble a dataset with ~7k labeled articles for supervised machine learning.
+
+
 ### Sentiment Analysis
 ### Categorization
 ### Summarization
