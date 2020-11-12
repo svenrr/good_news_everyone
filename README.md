@@ -10,19 +10,22 @@ The finished product could either be a website on which users could find only po
 
 ## Table of Content
 
-[Overview](###overview)
+1. [Overview](###overview)
 
-[Data acquistion](###data-acqusition)
+2. [Data acquistion](###data-acqusition)
 
-[Sentiment Analysis](###sentiment-analysis)
+3. [Sentiment Analysis](###sentiment-analysis)
 
-[Categorization](###categorization)
+4. [Categorization](###categorization)
 
-[Summarization](###summarization)
+5. [Summarization](###summarization)
 
-[Webapp](###webapp)
+6. [Webapp](###webapp)
 
 ### Overview
+
+
+
 ### Data acqusition
 ### Sentiment Analysis
 ### Categorization
