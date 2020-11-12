@@ -13,7 +13,7 @@ The finished product could either be a website on which users could find only po
 ## Table of Content
 ---------------------
 
-[1. Overview](###overview)
+[1. Overview](<https://github.com/svenrr/good_news_everyone#<overview>)
 
 [2. Data acquistion](###data-acqusition-&-engineering)
 
