@@ -15,23 +15,17 @@ We have adapted and optimized some scripts for our [interactive WebApp](https://
 ## Table of Content
 ---------------------
 
-[1. Overview](#overview)
+[1. Data acquistion and preprocessing](#data-acqusition-and-preprocessing)
 
-[2. Data acquistion and preprocessing](#data-acqusition-and-preprocessing)
+[2. Sentiment Analysis](#sentiment-analysis)
 
-[3. Sentiment Analysis](#sentiment-analysis)
+[3. Categorization](#categorization)
 
-[4. Categorization](#categorization)
+[4. Summarization](#summarization)
 
-[5. Summarization](#summarization)
-
-[6. Webapp](#webapp)
+[5. Webapp](#webapp)
 
 ---------------------
-
-### Overview
-
-
 
 
 ### Data acqusition and preprocessing
