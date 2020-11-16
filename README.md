@@ -3,7 +3,7 @@
 =====================
 # Good News Everyone!
 
-This is a project in which we try to differentiate between positive and negative/neutral news from the web automatically. This is done with an accuracy of 85%
+This is a project in which we try to differentiate between positive and negative/neutral news from the web automatically. This is done with an accuracy of 85%.
 For this we use a variety of machine learning models and dictionary based apporaches to sentiment analysis. 
 Furthermore the goal of this project was to categorize (e.g. business, finance, sports etc.) and summarize news articles.
 The finished product could either be a website on which users could find only positive news, or a livefeed, where our project could serve as a helpful tool for journalists or similar professions.
