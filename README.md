@@ -37,7 +37,7 @@ PREPROCESSING
 
 ### Sentiment Analysis
 
-For sentiment analysis we trained standard machine learning algorithms like SVM or LogisticRegression on the labeled dataset.
+For sentiment analysis we trained machine learning algorithms like SVM or LogisticRegression on the labeled dataset.
 A VotingClassifier serves as the final decision maker and has an accuracy of around 86% at this point in time.
 
 ### Categorization
@@ -50,4 +50,9 @@ TO BE FILLED
 
 ### Webapp
 
-For the Webapp we used streamlit.
+Streamlit was used to create the [Webapp](https://share.streamlit.io/svenrr/gne-webapp-streamlit/main/summary.py). The site offers the possibilty to copy and paste a self chosen article and see how well the algorithms mentioned above perform on it.
+Furthermore you can finde a preview of our idea for a live news feed, as well as some EDA.
+
+
+
+
