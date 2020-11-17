@@ -8,7 +8,7 @@ For this we use a variety of machine learning models and dictionary based appora
 Furthermore the goal of this project was to categorize (e.g. business, finance, sports etc.) and summarize news articles.
 The finished product could either be a website on which users could find only positive news, or a livefeed, where our project could serve as a helpful tool for journalists or similar professions.
 
-We have adapted and optimized some scripts for our [interactive WebApp](https://share.streamlit.io/svenrr/gne-webapp-streamlit/main/summary.py). We created a separate repository for this, which Streamlit.io accesses. You can find it [here](https://github.com/svenrr/GNE-webapp-streamlit).
+We have adapted and optimized some scripts for our [interactive WebApp](https://share.streamlit.io/svenrr/gne-webapp-streamlit/main/main.py). We created a separate repository for this, which Streamlit.io accesses. You can find it [here](https://github.com/svenrr/GNE-webapp-streamlit).
 
 =====================
 
@@ -52,7 +52,7 @@ We perform an extractive summary by looking at the different word frequencies. T
 
 ### Webapp
 
-Streamlit was used to create the [Webapp](https://share.streamlit.io/svenrr/gne-webapp-streamlit/main/summary.py). The site offers the possibilty to copy and paste a self chosen article and see how well the algorithms mentioned above perform on it.
+Streamlit was used to create the [Webapp](https://share.streamlit.io/svenrr/gne-webapp-streamlit/main/main.py). The site offers the possibilty to copy and paste a self chosen article and see how well the algorithms mentioned above perform on it.
 Furthermore you can finde a preview of our idea for a live news feed, as well as some EDA.
 
 
