@@ -14,6 +14,9 @@ class Lemmatizer:
         return True
         
     def lem_text(self, text):
+        
+        # Seperate words divided by / or - with space
+        text = text.replace('/', ' ').replace('-', ' ')
 
         # Lower text
         text = text.lower()
