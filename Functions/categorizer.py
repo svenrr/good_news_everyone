@@ -18,10 +18,10 @@ class Categorizer():
             X = [X]
                     
         # Lemmatization
-        #X_lem = [self.lemmatizer.lem_text(x) for x in X]
+        X_lem = [self.lemmatizer.lem_text(x) for x in X]
                 
         # Tfidf vectorization
-        X_tfidf = self.tfidf.transform(X)
+        X_tfidf = self.tfidf.transform(X_lem)
         
         return X_tfidf
     
