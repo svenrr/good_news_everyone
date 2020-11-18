@@ -8,9 +8,9 @@ class Sentiment_Analyser():
         # get total path, in case function is called from somewhere else
         total_path = os.path.dirname(os.path.realpath(__file__)) + '/'
 
-        self.tfidf = pickle.load(open(total_path + 'tfidf_sentiment.pkl', 'rb'))
+        self.tfidf = pickle.load(open(total_path + 'tfidf_sentiment.pickle', 'rb'))
         self.lemmatizer = Lemmatizer()
-        self.vc = pickle.load(open(total_path + 'vc_sentiment.pkl', 'rb'))
+        self.vc = pickle.load(open(total_path + 'vc_sentiment.pickle', 'rb'))
     def preprocess(self, X):
         
         # Check if X is string, turn to list
