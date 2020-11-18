@@ -31,4 +31,5 @@ class Sentiment_Analyser():
         X_tfidf = self.preprocess(X)
         
         # return categories
-        return self.vc.predict(X_tfidf)
+        proba = self.vc.predict_proba(X_tfidf)
+        return (proba[:,1] > 0.9) *1
