@@ -2,6 +2,9 @@
 __pycache__/
 *.pyc
 
+# VS Code
+.vscode/
+
 # Working folder fabi
 working_folder/
 
