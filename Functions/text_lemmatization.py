@@ -18,6 +18,9 @@ class Lemmatizer:
         # Seperate words divided by / or - with space
         text = text.replace('/', ' ').replace('-', ' ')
 
+        # Remove all words containing numbers
+        text = ' '.join(word for word in text.split(' ') if not any(s.isdigit() for s in word))
+
         # Lower text
         text = text.lower()
 
