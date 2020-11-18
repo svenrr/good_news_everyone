@@ -1,5 +1,6 @@
 import pickle
 import os
+from text_lemmatization import Lemmatizer
 
 class Categorizer():
     def __init__(self):
@@ -8,7 +9,7 @@ class Categorizer():
         total_path = os.path.dirname(os.path.realpath(__file__)) + '/'
 
         self.tfidf = pickle.load(open(total_path + 'tfidf_categorizer.pkl', 'rb'))
-        #self.lemmatizer = lemmatizer
+        self.lemmatizer = Lemmatizer()
         self.svc = pickle.load(open(total_path + 'svc_categorizer.pkl', 'rb'))
     def preprocess(self, X):
         
