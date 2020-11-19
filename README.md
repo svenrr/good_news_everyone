@@ -11,7 +11,6 @@ We have adapted and optimized some scripts for our interactive [WebApp](https://
 
 
 ## Table of Content
----------------------
 
 [1. Data acquistion and preprocessing](#data-acqusition-and-preprocessing)
 
@@ -22,8 +21,6 @@ We have adapted and optimized some scripts for our interactive [WebApp](https://
 [4. Summarization](#summarization)
 
 [5. Webapp](#webapp)
-
----------------------
 
 
 ### Data acqusition and preprocessing
