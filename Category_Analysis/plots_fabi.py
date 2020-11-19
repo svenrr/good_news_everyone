@@ -48,7 +48,7 @@ def simple_h_bar(x, y, ax=None, title=None, xlabel=None, ylabel=None):
 def bar_adjacent_labels(x, y, ax=None, title=None, xlabel=None, ylabel=None):
     """
     plots a bar chart with multiple plots per category and strings as labels
-    input y as list
+    input y as dict
     """
     
     n_indices = len(x)
@@ -61,8 +61,8 @@ def bar_adjacent_labels(x, y, ax=None, title=None, xlabel=None, ylabel=None):
         fig.tight_layout()
 
     #for y_ in y:
-    ax.bar(ind - width/2, y[0], width, label='train_acc', edgecolor='black')
-    ax.bar(ind + width/2, y[1], width, label='test_acc', edgecolor='black')
+    ax.bar(ind - width/2, list(y.values())[0], width, label=list(y.keys())[0], edgecolor='black')
+    ax.bar(ind + width/2, list(y.values())[1], width, label=list(y.keys())[1], edgecolor='black')
     ax.set_xticks(ind)
     ax.set_xticklabels(x)
     ax.legend()
