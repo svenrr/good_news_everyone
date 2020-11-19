@@ -1,6 +1,5 @@
 ![Good News](https://motionandmomentum.files.wordpress.com/2017/10/5181a5b8-6e3d-466f-9cea-8f900375fd42-720-000000640b9c2bac.gif)
 
-=====================
 # Good News Everyone!
 
 This is a project in which we try to differentiate between positive and negative/neutral news from the web automatically. This is done with an accuracy of 85%.
@@ -10,7 +9,6 @@ The finished product could either be a website on which users could find only po
 
 We have adapted and optimized some scripts for our interactive [WebApp](https://share.streamlit.io/svenrr/gne-webapp-streamlit/main/main.py). We created a separate repository for this, which Streamlit.io accesses. You can find it [here](https://github.com/svenrr/GNE-webapp-streamlit).
 
-=====================
 
 ## Table of Content
 ---------------------
