@@ -33,22 +33,23 @@ We have adapted and optimized some scripts for our [interactive WebApp](https://
 The main source of the data is webhose.io, a database for web content. From there we downloaded ~400k articles. After extensive data cleaning we ended up at ~70k articles. 
 These articles were already categorized (finance, politics etc.), but no label for the sentiment was given. We labeled part of the data by running 3 different dictionary based sentiment analysis. We chose three thresholds which made sure that an article was in fact positive or at least neutral. Neutral and bad articles were classified as one category.
 For more reliable data to add, we used positive news websites and scraped articles from there. We also used some subreddits as sources for good and bad news articles. In the end we assemble a dataset with ~7k labeled articles for supervised machine learning.
-PREPROCESSING
+
+PREPROCESSING!!
 
 ### Sentiment Analysis
 
-For sentiment analysis we trained machine learning algorithms like SVM or LogisticRegression on the labeled dataset.
-A VotingClassifier serves as the final decision maker and has an accuracy of around 86% at this point in time.
+For sentiment analysis we trained different machine learning algorithms like LogisticRegression or NaiveBayes on the labeled dataset.
+A VotingClassifier serves as the final decision maker and has an accuracy of around 85% at this point in time.
 
 ### Categorization
 
 Different machine learning algorithms were trained to categorize articles into seven categories.
-The metric used was accuracy, because the dataset was balanced, and each category has the same importance.
-The best result so far was archieved by linear SVMs with an accuracy of about 85%.
+The metric used was accuracy, because the dataset was balanced, and each category had the same importance.
+The best result so far was achieved by linear SVMs with an accuracy of about 85%.
 
 ### Summarization
 
-We perform an extractive summary by looking at the different word frequencies. These are then normalized and weighted differently. Accordingly, the different sentences can then be weighted and ranked. By default, the top 10% of sentences are used to make the summary.
+We perform an extractive summarization by looking at the different word frequencies. These are then normalized and weighted differently. Accordingly, the different sentences can then be weighted and ranked. By default, the top 10% of sentences are used to create the summary.
 
 ### Webapp
 
