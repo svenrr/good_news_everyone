@@ -18,6 +18,6 @@ We can see, that most words start building groups in their own categories. Eithe
 ***
 ***
 ***
-Feel free to look deeper inside with the graphic below.
+Feel free to look deeper inside with the graphic below:
 
-<embed type="text/html" src="map.html" width="600" height="400"></embed>
+[Word Map](map.html)
