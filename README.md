@@ -49,11 +49,11 @@ The final models reach an accuracy over 80%. You can learn more about it [here](
 
 We perform an extractive summarization by looking at the different word frequencies. These are then normalized and weighted differently. Accordingly, the different sentences can then be weighted and ranked. By default, the top 10% of sentences are used to create the summary.
 
-### Webapp
+### Webapp & Deployment 
 
 Streamlit was used to create the [Webapp](https://share.streamlit.io/svenrr/gne-webapp-streamlit/main/main.py). The site offers the possibilty to copy and paste a self chosen article and see how well the algorithms mentioned above perform on it.
 Furthermore you can finde a preview of our idea for a live news feed, as well as some EDA.
 
-
+![Deployment](https://snipboard.io/8FGKri.jpg)
 
 
