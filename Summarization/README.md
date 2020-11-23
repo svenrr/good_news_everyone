@@ -1,5 +1,6 @@
 # Summarization 
 ![Extractive Summary](./ext_summary.PNG)
+
 Here you can find everything about the text summary to summarize the news articles later.
 
 ![Summarization](https://snipboard.io/bCug6e.jpg)
