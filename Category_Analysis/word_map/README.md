@@ -20,4 +20,4 @@ We can see, that most words start building groups in their own categories. Eithe
 ***
 Feel free to look deeper inside with the graphic below:
 
-[Word Map](map.html)
+[Word Map](https://htmlpreview.github.io/?https://github.com/svenrr/good_news_everyone/blob/main/Category_Analysis/word_map/map.html)
