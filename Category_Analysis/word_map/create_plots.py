@@ -12,6 +12,7 @@ INPUT_FOLDER = 'simulation_results'
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 from time import time
 import pickle
 # Add functions path
@@ -42,6 +43,7 @@ count_total = pickle.load(open(INPUT_FOLDER + "/count_total.pkl", "rb"))
 #word_categories = [word_count.loc[word].argmax() for word in words]
 
 word_categories = [likelihood_df.loc[word].argmax() if likelihood_df.loc[word].max() > 0 else 7 for word in words]
+word_categories_names = [likelihood_df.columns[cat] for cat in word_categories]
 
 """
             Sizes of markers
@@ -101,19 +103,25 @@ if True:
         fig.tight_layout()
         
         # Set range
-        ax.set_xlim(-20000,20000)
-        ax.set_ylim(-20000,20000)
+        ax.set_xlim(-15000,15000)
+        ax.set_ylim(-15000,15000)
         
         # List of colors
         colors = ['green', 'orange', 'red', 'blue', 'yellow', 'brown', 'violet', 'grey']
 
         # Plot all words
-        for word, idx_, vec in zip(words, idx, Map):
+        for word, idx_, vec, label in zip(words, idx, Map, word_categories_names):
             x = vec[0]
             y = vec[1]
             ms = scaler.transform(count_total[word])
             ax.plot(x, y, marker='o', ms=ms, c=colors[idx_], alpha=0.7, linestyle='none')
             plt.annotate(word, (x, y), ha='center', va='center', size=10)
+
+        # Create legend
+        l = []
+        for i in range(len(likelihood_df.columns)):
+            l.append(mpatches.Patch(color=colors[i], label=likelihood_df.columns[i]))
+        ax.legend(handles=l)
 
         # Used to return the plot as an image array
         plt.close(fig)
@@ -133,10 +141,10 @@ if True:
         map_hist_less = []
         count = 0
         for m in Map_History:
-            if count%1000 == 0:
+            if count%100 == 0:
                 map_hist_less.append(m)
             count+=1
-        imageio.mimsave('./map.gif', [plot_for_offset(m) for m in map_hist_less], fps=20)
+        imageio.mimsave('./map.gif', [plot_for_offset(m) for m in map_hist_less], fps=15)
     else:
         imageio.mimsave('./map.gif', [plot_for_offset(m) for m in Map_History], fps=30)
         
@@ -152,7 +160,7 @@ if True:
 # shows output in notebook:
 #bokeh.io.output_notebook()
 
-from bokeh.models import ColumnDataSource, Label, LabelSet, Range1d
+from bokeh.models import ColumnDataSource, Label, LabelSet, Range1d, Legend, LegendItem
 from bokeh.plotting import figure, output_file, show
 
 output_file("map.html", title="Word Map")
@@ -166,11 +174,12 @@ source = ColumnDataSource(data=dict(x=Map[:,0],
                                     y=Map[:,1],
                                     names=words,
                                     color=color,
-                                    radius=radius))
+                                    radius=radius,
+                                    categories=word_categories_names))
 
 p = figure(title='Word Map')#,
 #           x_range=Range1d(140, 275))
-p.scatter(x='x', y='y', size='radius', source=source, fill_color='color', color='color')
+p.scatter(x='x', y='y', size='radius', source=source, fill_color='color', color='color', legend='categories')
 #p.xaxis[0].axis_label = 'Weight (lbs)'
 #p.yaxis[0].axis_label = 'Height (in)'
 
