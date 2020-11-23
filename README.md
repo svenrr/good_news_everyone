@@ -43,7 +43,7 @@ A VotingClassifier serves as the final decision maker and has an accuracy of aro
 
 Different machine learning algorithms were trained to categorize articles into seven categories.
 The metric used was accuracy, because the dataset was balanced, and each category had the same importance.
-The best result so far was achieved by linear SVMs with an accuracy of about 85%.
+The final models reach an accuracy over 80%. You can learn more about it [here](Category_Analysis/README.md)
 
 ### Summarization
 
