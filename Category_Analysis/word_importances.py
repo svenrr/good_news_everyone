@@ -11,7 +11,7 @@ def word_importances(df):
 
     # ngram_range only use 1 word, stop_words=english remove common words(eg: a, an, the)
     # CountVectorizer ignores difference between lower and upper case and puncuation
-    vect = CountVectorizer(ngram_range=(1,1), stop_words='english', min_df=min_df)
+    vect = CountVectorizer(ngram_range=(1,2), stop_words='english', min_df=min_df)
 
     # CountVectorizer converts list of strings to matrix with: rows = observation, columns = terms in text, values=count/document
     X = vect.fit_transform(text)
