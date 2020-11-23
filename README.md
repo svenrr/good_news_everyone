@@ -3,7 +3,7 @@
 # Good News Everyone!
 **Last update:** 23.11.2020
 
-**Authors:** [Sven Rutsch](https://www.linkedin.com/in/sven-rutsch-b9728612b/), (Fabian März)[https://www.linkedin.com/in/fabian-m%C3%A4rz-3913981b3/] & [Christoph Blickle](https://www.linkedin.com/in/christoph-blickle-4064ab1ba)
+**Authors:** [Sven Rutsch](https://www.linkedin.com/in/sven-rutsch-b9728612b/), [Fabian März](https://www.linkedin.com/in/fabian-m%C3%A4rz-3913981b3/) & [Christoph Blickle](https://www.linkedin.com/in/christoph-blickle-4064ab1ba)
 
 This is a project in which we try to differentiate between positive and negative/neutral news from the web automatically. This is done with an accuracy of 85%.
 For this we use a variety of machine learning models and dictionary based apporaches to sentiment analysis. 
