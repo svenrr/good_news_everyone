@@ -12,6 +12,8 @@ The finished product could either be a website on which users could find only po
 
 We have adapted and optimized some scripts for our interactive [WebApp](https://share.streamlit.io/svenrr/gne-webapp-streamlit/main/main.py). We created a separate repository for this, which Streamlit.io accesses. You can find it [here](https://github.com/svenrr/GNE-webapp-streamlit).
 
+**Short presentation:** https://docs.google.com/presentation/d/1cOYTSatxMXIUgyhFldnGQPYo4UV8NU7sPX3bwIPU4xI/edit?usp=sharing
+
 
 ## Table of Content
 
