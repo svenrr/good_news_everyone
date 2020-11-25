@@ -55,6 +55,8 @@ Our models are finalized in [this notebook](models_scikit_hyperOpt.ipynb).
 
 Below we see the final results for our models on the test dataset. If we take the Naive Bayes as our Base model, we see that the Fast text categorizer already improves the result by about 4%. With Logistic Regression and Linear SVC we were able to improve our Accuracy to about 82%. The best final model is the linear SVC, but you have to take into account about 900k feature words to achieve this accuracy. If we reduce the feature size to 40k, we still achieve an accuracy of almost 82% with logistic Regression, that's why we will use this cheaper method instead.
 
+In the EDA notebook you can also see some examples of wrongly classified articles. Here it gets clear, that the biggest problem is not the model, but wronlgy labeled articles, or either articles that fit multible labels. Of course some articles are of one category, having some content of other categories in description. To distinguish these, a more complex model would be necessary, but the first problem at hand to solve would be to introduce better labels or allow more than one per category.
+
 ![Results](results.png)
 
 ## Word Map
