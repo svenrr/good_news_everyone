@@ -34,7 +34,8 @@ The main source of the data is webhose.io, a database for web content. From ther
 These articles were already categorized (finance, politics etc.), but no label for the sentiment was given. We labeled part of the data by running 3 different dictionary based sentiment analysis. We chose three thresholds which made sure that an article was in fact positive or at least neutral. Neutral and bad articles were classified as one category.
 For more reliable data to add, we used positive news websites and scraped articles from there. We also used some subreddits as sources for good and bad news articles. In the end we assemble a dataset with ~7k labeled articles for supervised machine learning.
 
-PREPROCESSING!!
+The preprocessing of the articles was mainly done with spaCy, which we used for the tokenization. To vectorize the remaining data we used the TfidfVectorizer from Scikit-learn.
+These two processing methods and tools gave the best result out of all the libraries we tried (e.g. Gensim tokenizing and Word2Vec-Transformation)
 
 ### Sentiment Analysis
 
